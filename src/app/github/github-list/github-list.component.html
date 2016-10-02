@@ -1,0 +1,10 @@
+<p>
+  github-list works!
+</p>
+<a [routerLink]="['/github', 'test']">Test?</a>
+<a [routerLink]="['/github', 'repojizz']">Jizz?</a>
+
+<app-github-list-item
+        *ngFor="let entry of feed"
+        [entry]="entry">
+</app-github-list-item>
